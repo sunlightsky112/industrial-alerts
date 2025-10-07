@@ -75,6 +75,9 @@ builder.Services.AddAuthorization();
 
 builder.Services.AddControllers();
 
+// Register simulator as hosted service
+builder.Services.AddHostedService<Infrastructure.Services.SensorSimulator>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
