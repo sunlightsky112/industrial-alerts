@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5Du/b2Q/F1U=",
+  "dgSpecHash": "gznjrdtyh+w=",
   "success": true,
-  "projectFilePath": "/home/sunlight/Work/industrial-alerts/Tests/Tests.csproj",
+  "projectFilePath": "/home/sunlight/Work/industrial-alerts/backend/Tests/Tests.csproj",
   "expectedPackageFiles": [
     "/home/sunlight/.nuget/packages/coverlet.collector/6.0.0/coverlet.collector.6.0.0.nupkg.sha512",
     "/home/sunlight/.nuget/packages/microsoft.codecoverage/17.8.0/microsoft.codecoverage.17.8.0.nupkg.sha512",

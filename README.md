@@ -170,6 +170,28 @@ GRANT ALL PRIVILEGES ON DATABASE alertsdb TO alerts_user;
 - Manual testing via Swagger, Postman, or `.http` file  
 - Frontend tested via browser  
 
+### Project Structure
+```
+backend/
+  Tests/
+    Domain.Tests/
+      Domain.Tests.csproj
+      AlertTests.cs
+      ConfigTests.cs
+```
+
+- **Domain.Tests** is the active test project.  
+
+### Running Tests
+From the repo root:
+```bash
+dotnet test
+```
+
+### Coverage
+- **AlertTests** → verifies alerts are created when thresholds are exceeded and can be acknowledged.  
+- **ConfigTests** → validates threshold values.  
+
 ---
 
 ## ⭐ Bonus Features

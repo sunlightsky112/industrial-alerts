@@ -6375,11 +6375,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/sunlight/Work/industrial-alerts/Tests/Tests.csproj",
+      "projectUniqueName": "/home/sunlight/Work/industrial-alerts/backend/Tests/Tests.csproj",
       "projectName": "Tests",
-      "projectPath": "/home/sunlight/Work/industrial-alerts/Tests/Tests.csproj",
+      "projectPath": "/home/sunlight/Work/industrial-alerts/backend/Tests/Tests.csproj",
       "packagesPath": "/home/sunlight/.nuget/packages/",
-      "outputPath": "/home/sunlight/Work/industrial-alerts/Tests/obj/",
+      "outputPath": "/home/sunlight/Work/industrial-alerts/backend/Tests/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/sunlight/.nuget/NuGet/NuGet.Config"
@@ -6394,11 +6394,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/home/sunlight/Work/industrial-alerts/Domain/Domain.csproj": {
-              "projectPath": "/home/sunlight/Work/industrial-alerts/Domain/Domain.csproj"
+            "/home/sunlight/Work/industrial-alerts/backend/Domain/Domain.csproj": {
+              "projectPath": "/home/sunlight/Work/industrial-alerts/backend/Domain/Domain.csproj"
             },
-            "/home/sunlight/Work/industrial-alerts/Infrastructure/Infrastructure.csproj": {
-              "projectPath": "/home/sunlight/Work/industrial-alerts/Infrastructure/Infrastructure.csproj"
+            "/home/sunlight/Work/industrial-alerts/backend/Infrastructure/Infrastructure.csproj": {
+              "projectPath": "/home/sunlight/Work/industrial-alerts/backend/Infrastructure/Infrastructure.csproj"
             }
           }
         }
