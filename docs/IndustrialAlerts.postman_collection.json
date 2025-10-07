@@ -1,0 +1,53 @@
+{
+  "info": {
+    "name": "Industrial Alerts API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Login",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"username\": \"operator\",\n  \"password\": \"password123\"\n}"
+        },
+        "url": { "raw": "http://localhost:5150/auth/login" }
+      }
+    },
+    {
+      "name": "Get Config",
+      "request": {
+        "method": "GET",
+        "url": { "raw": "http://localhost:5150/config" }
+      }
+    },
+    {
+      "name": "Update Config",
+      "request": {
+        "method": "PUT",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"tempMax\": 75,\n  \"humidityMax\": 60\n}"
+        },
+        "url": { "raw": "http://localhost:5150/config" }
+      }
+    },
+    {
+      "name": "Get Alerts",
+      "request": {
+        "method": "GET",
+        "url": { "raw": "http://localhost:5150/alerts?status=open" }
+      }
+    },
+    {
+      "name": "Acknowledge Alert",
+      "request": {
+        "method": "POST",
+        "url": { "raw": "http://localhost:5150/alerts/{{alertId}}/ack" }
+      }
+    }
+  ]
+}

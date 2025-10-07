@@ -1,0 +1,34 @@
+### Login
+POST http://localhost:5150/auth/login
+Content-Type: application/json
+
+{
+  "username": "operator",
+  "password": "password123"
+}
+
+### Get Config
+GET http://localhost:5150/config
+Authorization: Bearer {{token}}
+
+### Update Config
+PUT http://localhost:5150/config
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "tempMax": 75,
+  "humidityMax": 60
+}
+
+### Get Alerts (all open)
+GET http://localhost:5150/alerts?status=open
+Authorization: Bearer {{token}}
+
+### Get Alerts (acknowledged, with date range)
+GET http://localhost:5150/alerts?status=ack&from=2025-10-01T00:00:00Z&to=2025-10-07T23:59:59Z
+Authorization: Bearer {{token}}
+
+### Acknowledge Alert
+POST http://localhost:5150/alerts/{{alertId}}/ack
+Authorization: Bearer {{token}}

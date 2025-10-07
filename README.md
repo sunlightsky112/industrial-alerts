@@ -72,7 +72,7 @@ dotnet restore
 In `appsettings.Development.json`:
 ```json
 "ConnectionStrings": {
-  "DefaultConnection": "Host=localhost;Port=5432;Database=alertsdb;Username=alerts;Password=alerts"
+  "DefaultConnection": "Host=localhost;Port=5432;Database=alertsdb;Username=alerts_user;Password=alerts_pass"
 }
 ```
 
@@ -144,42 +144,9 @@ GRANT ALL PRIVILEGES ON DATABASE alertsdb TO alerts_user;
 | GET    | `/alerts?status=open|ack&from=...&to=...` | List alerts with filters |
 | POST   | `/alerts/{id}/ack` | Acknowledge alert |
 
-### Example `.http` file (VS Code REST Client)
-```http
-### Login
-POST http://localhost:5150/auth/login
-Content-Type: application/json
-
-{
-  "username": "operator",
-  "password": "password123"
-}
-
-### Get Config
-GET http://localhost:5150/config
-Authorization: Bearer {{token}}
-
-### Update Config
-PUT http://localhost:5150/config
-Authorization: Bearer {{token}}
-Content-Type: application/json
-
-{
-  "tempMax": 75,
-  "humidityMax": 60
-}
-
-### Get Alerts
-GET http://localhost:5150/alerts?status=open
-Authorization: Bearer {{token}}
-
-### Acknowledge Alert
-POST http://localhost:5150/alerts/{{alertId}}/ack
-Authorization: Bearer {{token}}
-```
-
-### Postman Collection
-A `docs/IndustrialAlerts.postman_collection.json` is included for import into Postman.
+- Swagger UI: http://localhost:5150/swagger
+- Postman collection: [docs/IndustrialAlerts.postman_collection.json](docs/IndustrialAlerts.postman_collection.json)
+- VS Code REST Client: [docs/api.http](docs/api.http)
 
 ---
 
