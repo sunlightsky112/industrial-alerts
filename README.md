@@ -21,7 +21,7 @@ A full‑stack system that simulates industrial sensor telemetry, raises alerts 
 14. [Folder Structure](#folder-structure)  
 ---
 
-## 📖 Overview
+## Overview
 This project simulates an **Industrial Automation Alert Service**. It continuously generates random sensor readings (temperature and humidity), compares them against configurable thresholds, and raises alerts when values exceed limits.  
 
 The system exposes secure APIs (JWT‑protected) and a **Next.js dashboard** where operators can:
@@ -204,6 +204,7 @@ backend/
   Api/              # ASP.NET Core Web API
   Domain/           # Entities & enums
   Infrastructure/   # EF Core DbContext, services
+  Tests             # Unit tests
 frontend/
   app/              # Next.js App Router pages
   lib/              # API client
