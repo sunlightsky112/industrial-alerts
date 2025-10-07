@@ -17,10 +17,8 @@ A full‑stack system that simulates industrial sensor telemetry, raises alerts 
 10. [Frontend Features](#frontend-features)  
 11. [Development Notes](#development-notes)  
 12. [Testing](#testing)  
-13. [Bonus Features](#bonus-features)  
+13. [other Features](#other-features)  
 14. [Folder Structure](#folder-structure)  
-15. [Future Improvements](#future-improvements)  
-
 ---
 
 ## 📖 Overview
@@ -34,7 +32,7 @@ The system exposes secure APIs (JWT‑protected) and a **Next.js dashboard** whe
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 - **Backend (C# / ASP.NET Core 8)**  
   - REST API with JWT authentication  
   - EF Core with PostgreSQL persistence  
@@ -54,7 +52,7 @@ The system exposes secure APIs (JWT‑protected) and a **Next.js dashboard** whe
 
 ---
 
-## ⚙️ Tech Stack
+## Tech Stack
 - **Backend:** ASP.NET Core 8, EF Core, JWT, Swagger  
 - **Frontend:** Next.js, TypeScript, TailwindCSS, TanStack Query  
 - **Database:** PostgreSQL  
@@ -62,7 +60,7 @@ The system exposes secure APIs (JWT‑protected) and a **Next.js dashboard** whe
 
 ---
 
-## 🔧 Backend Setup
+## Backend Setup
 ```bash
 cd backend/Api
 dotnet restore
@@ -89,7 +87,7 @@ API available at: [http://localhost:5150/swagger](http://localhost:5150/swagger)
 
 ---
 
-## 🎨 Frontend Setup
+## Frontend Setup
 ```bash
 cd frontend
 npm install
@@ -99,7 +97,7 @@ Frontend available at: [http://localhost:3000](http://localhost:3000)
 
 ---
 
-## 🗄️ Database Setup
+## Database Setup
 - Run PostgreSQL via Docker:
 ```bash
 cd backend
@@ -116,7 +114,7 @@ GRANT ALL PRIVILEGES ON DATABASE alertsdb TO alerts_user;
 
 ---
 
-## ▶️ Running the System
+## Running the System
 1. Start PostgreSQL  
 2. Run backend (`dotnet run --project Api`)  
 3. Run frontend (`npm run dev`)  
@@ -124,7 +122,7 @@ GRANT ALL PRIVILEGES ON DATABASE alertsdb TO alerts_user;
 
 ---
 
-## 🔑 Authentication
+## Authentication
 - Demo credentials:
   - **Username:** `operator`  
   - **Password:** `password123`  
@@ -133,7 +131,7 @@ GRANT ALL PRIVILEGES ON DATABASE alertsdb TO alerts_user;
 
 ---
 
-## 📡 API Documentation
+## API Documentation
 
 ### Endpoints
 | Method | Endpoint | Description |
@@ -150,7 +148,7 @@ GRANT ALL PRIVILEGES ON DATABASE alertsdb TO alerts_user;
 
 ---
 
-## 🖥️ Frontend Features
+## Frontend Features
 - **Login Page** → calls `/auth/login`, stores JWT, redirects to dashboard  
 - **Dashboard**  
   - Config card → view/update thresholds  
@@ -158,14 +156,14 @@ GRANT ALL PRIVILEGES ON DATABASE alertsdb TO alerts_user;
 
 ---
 
-## 🧑‍💻 Development Notes
+## Development Notes
 - BackgroundService generates random readings every 3–5s  
 - Alerts are stored in DB with `Status = Open` until acknowledged  
 - All times stored in UTC  
 
 ---
 
-## 🧪 Testing
+## Testing
 - Unit tests for core logic in backend (`xUnit`)  
 - Manual testing via Swagger, Postman, or `.http` file  
 - Frontend tested via browser  
@@ -194,14 +192,13 @@ dotnet test
 
 ---
 
-## ⭐ Bonus Features
-- SignalR hub for live alerts (optional)  
-- Docker Compose for backend + frontend + Postgres  
+## Other Features
+- Docker Compose for Postgres  
 - GitHub Actions CI  
 
 ---
 
-## 📂 Folder Structure
+## Folder Structure
 ```
 backend/
   Api/              # ASP.NET Core Web API
@@ -216,9 +213,3 @@ docs/
 ```
 
 ---
-
-## 🚀 Future Improvements
-- Add role‑based auth (admin/operator)  
-- Add pagination to alerts  
-- Add charts for telemetry trends  
-- Add Docker Compose for one‑command startup  
