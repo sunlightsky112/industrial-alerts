@@ -10,6 +10,6 @@ public class Alert
     public AlertType Type { get; set; }
     public decimal Value { get; set; }
     public decimal Threshold { get; set; }
-    public DateTimeOffset CreatedAt { get; set; } = DateTimeOffset.UtcNow;
+    public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
     public AlertStatus Status { get; set; } = AlertStatus.Open;
 }

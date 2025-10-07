@@ -4,6 +4,15 @@ import { useState } from "react";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import api from "@/lib/api";
 
+interface Alert {
+  id: string;
+  type: number;
+  status: number;
+  threshold: number;
+  value: number;
+  createdAt: string;
+}
+
 export default function Dashboard() {
   const qc = useQueryClient();
 
@@ -29,8 +38,8 @@ export default function Dashboard() {
     queryFn: async () => {
       const params = new URLSearchParams();
       if (status) params.append("status", status);
-      if (from) params.append("from", from);
-      if (to) params.append("to", to);
+      if (from) params.append("from", `${from}T00:00:00Z`);
+      if (to) params.append("to", `${to}T23:59:59Z`);
       const res = await api.get(`/alerts?${params.toString()}`);
       return res.data;
     },
@@ -99,24 +108,36 @@ export default function Dashboard() {
               <th className="p-2 border">Value</th>
               <th className="p-2 border">Threshold</th>
               <th className="p-2 border">Created</th>
+              <th className="p-2 border">Status</th>
               <th className="p-2 border">Action</th>
             </tr>
           </thead>
           <tbody>
-            {alerts?.map((a: any) => (
-              <tr key={a.id}>
-                <td className="p-2 border">{a.type}</td>
-                <td className="p-2 border">{a.value}</td>
-                <td className="p-2 border">{a.threshold}</td>
+            {alerts?.map((alert: Alert) => (
+              <tr key={alert.id}>
+                <td className="p-2 border">{alert.type}</td>
+                <td className="p-2 border">{alert.value}</td>
+                <td className="p-2 border">{alert.threshold}</td>
                 <td className="p-2 border">
-                  {new Date(a.createdAt).toLocaleString()}
+                  {new Date(alert.createdAt).toLocaleString()}
                 </td>
-                <td className="p-2 border">
+                <td className="p-2 border text-center">
+                  {alert.status === 1 ? (
+                    <span className="bg-green-100 text-green-800 font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-green-900 dark:text-green-300">
+                      Acknowledged
+                    </span>
+                  ) : (
+                    <span className="bg-blue-100 text-blue-800 font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-blue-900 dark:text-blue-300">
+                      Open
+                    </span>
+                  )}
+                </td>
+                <td className="p-2 border text-center">
                   <button
                     className="bg-blue-600 text-white px-2 py-1 rounded"
-                    onClick={() => ackAlert.mutate(a.id)}
+                    onClick={() => ackAlert.mutate(alert.id)}
                   >
-                    Ack
+                    Acknowledge
                   </button>
                 </td>
               </tr>

@@ -9,3 +9,15 @@
 /home/sunlight/Work/industrial-alerts/Domain/obj/Debug/net8.0/refint/Domain.dll
 /home/sunlight/Work/industrial-alerts/Domain/obj/Debug/net8.0/Domain.pdb
 /home/sunlight/Work/industrial-alerts/Domain/obj/Debug/net8.0/ref/Domain.dll
+/home/sunlight/Work/industrial-alerts/backend/Domain/bin/Debug/net8.0/Domain.deps.json
+/home/sunlight/Work/industrial-alerts/backend/Domain/bin/Debug/net8.0/Domain.dll
+/home/sunlight/Work/industrial-alerts/backend/Domain/bin/Debug/net8.0/Domain.pdb
+/home/sunlight/Work/industrial-alerts/backend/Domain/obj/Debug/net8.0/Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/sunlight/Work/industrial-alerts/backend/Domain/obj/Debug/net8.0/Domain.AssemblyInfoInputs.cache
+/home/sunlight/Work/industrial-alerts/backend/Domain/obj/Debug/net8.0/Domain.AssemblyInfo.cs
+/home/sunlight/Work/industrial-alerts/backend/Domain/obj/Debug/net8.0/Domain.csproj.CoreCompileInputs.cache
+/home/sunlight/Work/industrial-alerts/backend/Domain/obj/Debug/net8.0/Domain.sourcelink.json
+/home/sunlight/Work/industrial-alerts/backend/Domain/obj/Debug/net8.0/Domain.dll
+/home/sunlight/Work/industrial-alerts/backend/Domain/obj/Debug/net8.0/refint/Domain.dll
+/home/sunlight/Work/industrial-alerts/backend/Domain/obj/Debug/net8.0/Domain.pdb
+/home/sunlight/Work/industrial-alerts/backend/Domain/obj/Debug/net8.0/ref/Domain.dll
