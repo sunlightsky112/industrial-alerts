@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GbF+M1VljsQ=",
+  "dgSpecHash": "yEYK/xeq1+4=",
   "success": true,
-  "projectFilePath": "/home/sunlight/Work/industrial-alerts/Domain/Domain.csproj",
+  "projectFilePath": "/home/sunlight/Work/industrial-alerts/backend/Domain/Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

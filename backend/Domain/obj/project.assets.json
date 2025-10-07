@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/sunlight/Work/industrial-alerts/Domain/Domain.csproj",
+      "projectUniqueName": "/home/sunlight/Work/industrial-alerts/backend/Domain/Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "/home/sunlight/Work/industrial-alerts/Domain/Domain.csproj",
+      "projectPath": "/home/sunlight/Work/industrial-alerts/backend/Domain/Domain.csproj",
       "packagesPath": "/home/sunlight/.nuget/packages/",
-      "outputPath": "/home/sunlight/Work/industrial-alerts/Domain/obj/",
+      "outputPath": "/home/sunlight/Work/industrial-alerts/backend/Domain/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/sunlight/.nuget/NuGet/NuGet.Config"

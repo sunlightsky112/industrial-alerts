@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/sunlight/Work/industrial-alerts/Infrastructure/Infrastructure.csproj": {}
+    "/home/sunlight/Work/industrial-alerts/backend/Infrastructure/Infrastructure.csproj": {}
   },
   "projects": {
-    "/home/sunlight/Work/industrial-alerts/Domain/Domain.csproj": {
+    "/home/sunlight/Work/industrial-alerts/backend/Domain/Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/sunlight/Work/industrial-alerts/Domain/Domain.csproj",
+        "projectUniqueName": "/home/sunlight/Work/industrial-alerts/backend/Domain/Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "/home/sunlight/Work/industrial-alerts/Domain/Domain.csproj",
+        "projectPath": "/home/sunlight/Work/industrial-alerts/backend/Domain/Domain.csproj",
         "packagesPath": "/home/sunlight/.nuget/packages/",
-        "outputPath": "/home/sunlight/Work/industrial-alerts/Domain/obj/",
+        "outputPath": "/home/sunlight/Work/industrial-alerts/backend/Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/sunlight/.nuget/NuGet/NuGet.Config"
@@ -62,14 +62,14 @@
         }
       }
     },
-    "/home/sunlight/Work/industrial-alerts/Infrastructure/Infrastructure.csproj": {
+    "/home/sunlight/Work/industrial-alerts/backend/Infrastructure/Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/sunlight/Work/industrial-alerts/Infrastructure/Infrastructure.csproj",
+        "projectUniqueName": "/home/sunlight/Work/industrial-alerts/backend/Infrastructure/Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "/home/sunlight/Work/industrial-alerts/Infrastructure/Infrastructure.csproj",
+        "projectPath": "/home/sunlight/Work/industrial-alerts/backend/Infrastructure/Infrastructure.csproj",
         "packagesPath": "/home/sunlight/.nuget/packages/",
-        "outputPath": "/home/sunlight/Work/industrial-alerts/Infrastructure/obj/",
+        "outputPath": "/home/sunlight/Work/industrial-alerts/backend/Infrastructure/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/sunlight/.nuget/NuGet/NuGet.Config"
@@ -84,8 +84,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/sunlight/Work/industrial-alerts/Domain/Domain.csproj": {
-                "projectPath": "/home/sunlight/Work/industrial-alerts/Domain/Domain.csproj"
+              "/home/sunlight/Work/industrial-alerts/backend/Domain/Domain.csproj": {
+                "projectPath": "/home/sunlight/Work/industrial-alerts/backend/Domain/Domain.csproj"
               }
             }
           }

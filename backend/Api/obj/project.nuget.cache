@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iER27XaHw3s=",
+  "dgSpecHash": "m8D4Z8vU+Tc=",
   "success": true,
-  "projectFilePath": "/home/sunlight/Work/industrial-alerts/Api/Api.csproj",
+  "projectFilePath": "/home/sunlight/Work/industrial-alerts/backend/Api/Api.csproj",
   "expectedPackageFiles": [
     "/home/sunlight/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/home/sunlight/.nuget/packages/microsoft.aspnetcore.authentication.abstractions/2.3.0/microsoft.aspnetcore.authentication.abstractions.2.3.0.nupkg.sha512",
